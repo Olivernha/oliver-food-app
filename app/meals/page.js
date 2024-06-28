@@ -3,6 +3,11 @@ import Link from 'next/link';
 import classes from './page.module.css';
 import MealsGrid from '@/components/meals/meals-grid';
 import { getMeals } from '@/lib/meals';
+
+export const metadata ={
+    title : 'All meals',
+    description : 'Browse all meals shared by the community'
+}
 import { Suspense } from 'react';
 import MealsLoadingPage from './loading-out';
 async function Meals() {
